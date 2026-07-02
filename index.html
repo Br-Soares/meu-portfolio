@@ -8,52 +8,54 @@
 </head>
 <body>
 
-    <header>
-        <h1>Bruno Soares</h1>
-        <p>Desenvolvedor de Software</p>
-        
+    <header class="top-nav">
+        <div class="logo">
+            <h2>B<span>.S</span></h2>
+        </div>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <button id="theme-toggle">Alterar Tema</button>
         </nav>
+        <button id="theme-toggle">Alternar Tema</button>
     </header>
 
-    <main>
-        <!-- 1. SEÇÃO SOBRE MIM -->
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <p>Bem-vindo ao meu laboratório de desenvolvimento! Aqui vou postar meus projetos e aprendizados.</p>
+    <main class="content-container">
+
+        <section id="home" class="hero-section">
+            <div class="hero-text">
+                <span>OLÁ, EU SOU O</span>
+                <h1>Bruno Soares</h1>
+                <h2>Desenvolvedor de Software</h2>
+                <p>blablabla</p>
+                <a href="#projetos" class="btn-primary">Ver Meus Projetos</a>
+            </div>
         </section>
 
-        <!-- 2. SECÇÂO DE PROJETOS -->
-        <section id="projetos">
-            <h2>Meus Projetos</h2>
+        <section id="projetos" class="projects-section">
+            <h2>Projetos em Destaque</h2>
+            
             <div class="projects-grid">
                 
-                <!-- 3. CARD DO TERMINOMON-RPG-->
                 <article class="project-card">
-                    <img src="assets/terminomon-demo.gif" alt="Demonstração do Terminomon RPG" style="width: 100%; border-radius: 4px; margin-bottom: 1rem;">
-                    
+                    <img src="assets/terminomon-demo.gif" alt="Demonstração do Terminomon RPG">
                     <h3>Terminomon-RPG</h3>
                     <p>Uma ferramenta de produtividade gamificada que transforma o terminal Linux (Zsh) num sistema de progressão contínua. O software monitoriza comandos executados e commits de Git em tempo real, convertendo o fluxo de trabalho do programador em experiência (XP), patentes de engenharia e capturas automatizadas numa Pokédex integrada.</p>
-
                     <div class="project-buttons">
-                        <a href="https://github.com/Br-Soares/Terminomon-RPG" target="_blank" class="project-link code-link">Ver Repositório no GitHub</a>
+                        <a href="https://github.com/Br-Soares/Terminomon-RPG" target="_blank" class="project-link code-link">Ver no GitHub</a>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <h3>---------------</h3>
-                    <p>---------------------------------------------------------------------</p>
+                    <h3>Em Breve</h3>
+                    <p>Próximo projeto interativo em desenvolvimento...</p>
                     <a href="#" class="project-link">Ver Projeto</a>
                 </article>
 
-            </div>
-        </section>
+            </div> </section>
+
     </main>
 
     <footer>
